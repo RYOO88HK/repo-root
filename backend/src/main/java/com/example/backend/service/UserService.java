@@ -20,7 +20,7 @@ public class UserService {
     public User create(CreateUserRequest request) {
         User user = new User();
         user.setName(request.getName());
-        user.setCity(request.getCity());
+        user.setCity(request.getCity());    
         return repository.save(user);
     }
 
